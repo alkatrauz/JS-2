@@ -21,17 +21,15 @@
     <h1>Alura Midi</h1>
 
     <section class="teclado">
-        <button class="tecla tecla_pom">Pom</button>
-        <button class="tecla tecla_clap">Clap</button>
-        <button class="tecla tecla_tim">Tim</button>
-
-        <button class="tecla tecla_puff">Puff</button>
-        <button class="tecla tecla_splash">Splash</button>
-        <button class="tecla tecla_toim">Toim</button>
-
-        <button class="tecla tecla_psh">Psh</button>
-        <button class="tecla tecla_tic">Tic</button>
-        <button class="tecla tecla_tom">Tom</button>
+        <button class="tecla tecla_pom" onclick="tocaSomPom('pom')">Pom</button>
+        <button class="tecla tecla_clap" onclick="tocaSomClap('clap')">Clap</button>
+        <button class="tecla tecla_tim" onclick="tocaSomTim('tim')">Tim</button>
+        <button class="tecla tecla_puff" onclick="tocaSomPuff('puff')">Puff</button>
+        <button class="tecla tecla_splash" onclick="tocaSomSplash('splash')">Splash</button>
+        <button class="tecla tecla_toim" onclick="tocaSomToim('toim')">Toim</button>
+        <button class="tecla tecla_psh" onclick="tocaSomPsh('psh')">Psh</button>
+        <button class="tecla tecla_tic" onclick="tocaSomTic('tic')">Tic</button>
+        <button class="tecla tecla_tom" onclick="tocaSomTom('tom')">Tom</button>
     </section>
 
     <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
@@ -80,8 +78,7 @@
         function tocaSomTom () {
             document.querySelector("#som_tecla_tom").play()
         }
-
     </script>
-    <script src=""></script>
+    <script src="main.js"></script>
 </body>
 </html>
